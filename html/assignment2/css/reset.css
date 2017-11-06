@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Times New Roman, verdana;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+a{ color: black; }

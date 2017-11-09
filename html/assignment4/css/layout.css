@@ -1,0 +1,163 @@
+.main-wrapper{
+	width: 100%;
+	/*min-width: 320px;*/
+}
+.content-wrapper{
+	
+	width: 95%;
+	margin-left:2.5%;
+	margin-right: 2.5%;
+	margin: 0 auto;
+}
+
+.header{
+	background:#ececec;
+	width: 100%;
+	}
+.top-header{
+	width: 100%;
+	background: url(../images/top-header.png)repeat-x;
+	display: table;
+
+}
+.bottom-header{
+	width: 100%;
+	background: #ececec;
+	display: table;
+
+}
+.bottom-header-pointer{
+	background: #f3f3f3;
+	max-width: 173.125em;
+	width: 100%;
+
+}
+
+.body{
+	background: #f3f3f3;
+	width: 100%;
+	display: table;
+	padding-bottom: 10px;
+
+}
+.project-name{
+	display: table;
+}
+.image-slider{
+
+}
+.image-index{
+
+}
+.project-description-wrapper{
+	/*padding: 10px 1px;*/
+}
+
+
+.footer{
+	background: #76c7c0;
+	width: 100%;
+}
+.top-footer{
+	background: url(../images/top-footer.png)repeat-x;
+
+	width: 100%;
+	display: table;
+	/*padding: 10px 1px;*/
+}
+.top-footer .content-wrapper{
+	
+	 display: table;
+}
+.bottom-footer{
+	background: #6ab3ac;
+	width: 100%;
+	display: table;
+	/*padding: 0px 1px;*/
+	
+}
+.bottom-footer.content-wrapper{
+	
+}
+
+@media only screen and (min-width:1200px){
+.main-wrapper{
+	width: 100%;
+	min-width: 1200px;
+}
+
+.content-wrapper{
+	
+	width: 1170px;
+	margin: 0 auto;
+}
+.header{
+	background:;
+	width: 100%;
+	}
+.top-header{
+	width: 100%;
+	background: url(../images/top-header.png);
+	display: table;
+
+}
+.bottom-header{
+	width: 100%;
+	background: #ececec;
+	display: table;
+
+}
+.bottom-header-pointer{
+	background: #f3f3f3;
+	min-width: 1170px;
+	width: 100%;
+
+}
+
+.body{
+	background: #f3f3f3;
+	width: 100%;
+	display: table;
+	padding-bottom: 60px;
+
+}
+.project-name{
+	display: table;
+}
+.image-slider{
+
+}
+.image-index{
+
+}
+.project-description-wrapper{
+	padding: 15px 1px;
+}
+
+
+.footer{
+	background: #76c7c0;
+	width: 100%;
+}
+.top-footer{
+	background: url(../images/top-footer.png)repeat-x;
+
+	width: 100%;
+	display: table;
+	padding: 50px 2px;
+}
+.top-footer .content-wrapper{
+	
+	 display: table;
+}
+.bottom-footer{
+	background: #6ab3ac;
+	width: 100%;
+	display: table;
+	padding: 0px 2px;
+	
+}
+.bottom-footer.content-wrapper{
+	
+}
+}

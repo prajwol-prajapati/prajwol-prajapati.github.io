@@ -131,7 +131,7 @@
 .left .side-block .block-content ul li .content{height: auto; float: left; max-width: 149px; font-size: 11pt; line-height: 12px;}
 .left .side-block .block-content ul li .icon{height: auto; width: auto;float: right;}
 
-.col3-left-layout .col2-right{background:; width: ; height: auto;float: right; margin-left: 2px;}
+.col3-left-layout .col2-right{background:; width: ; height: auto;float: right; margin-left: 1px;}
 .col3-left-layout .col2-right .main{background:; width: 518px; height: auto; float: left; margin-left: 12px; margin-right: 12px;}
 .col3-left-layout .col2-right .main h1{background-color: ; font-size: 30px; line-height: 0px;padding-top: 12px; padding-bottom: 20px;}
 .col3-left-layout .col2-right .main .head-container{background-color:#727272; width:518px; height: auto;border-bottom: solid #2fc1da;}
@@ -171,7 +171,7 @@
 }
 .text{
 	float: left;
-	width: 440px;
+	width: 435px;
 	margin-left:8px;
 }
 .text h2{

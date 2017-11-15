@@ -96,9 +96,9 @@ function Track(trackId) {
             // console.log(this.positionTop);
             if (that.positionTop <= 10000) {
                 that.positionTop += 2;
-                if (that.obstacle.obstaclePositionTop <= 600) {
+                if (that.obstacle.obstaclePositionTopx <= 600) {
                     // console.log('inside if');
-                    that.obstacle.obstaclePositionTop += 2;
+                    that.obstacle.obstaclePositionTopx += 2;
                     that.obstacle.obstacle.style.top = that.obstacle.obstaclePositionTop + 'px';
                     if (that.obstacle.position == that.car.x && that.obstacle.obstaclePositionTop >= 420) {
                         console.log('game over');

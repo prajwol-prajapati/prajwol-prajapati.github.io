@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Web Builder</title>
+		<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet"> -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/edit-layout.css" id="editLayout">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+	</head>
+	<body>
+		<div class="main-container">
+			
+			<div class="edit" id="editPanel" ondrop="dragDrop.drop(event)" ondragover="dragDrop.allowDrop(event)">
+				
+
+			
+
+			</div>
+
+			<!-- top navigation bar -->
+			<div class="nav-bar">
+			
+				<div class="col-5 logo pull-left">
+					<h1>Web Builder</h1>
+				</div>
+				
+				<div class="col-7 nav pull-right">
+					<ul class="pull-right">
+						<li>
+							<div class="button-group">
+								<button id="editViewButton" class="active" disabled="true"><i class="fa fa-edit"></i>Edit</button>
+								<button id="previewButton"><i class="fa fa-tv"></i>Preview</button>
+							</div>
+						</li>
+						
+						<li>
+							<div class="button-group">
+								<button id="download" onclick="navButtons.downloadButton()"><i class="fa fa-download"></i>Download</button>
+							</div>
+						</li>
+					</ul>
+					
+					
+				</div>
+				
+			</div>
+			
+			<!-- side bar -->
+			<div class="side-bar" id="sideBar">
+				<ul>
+					<li>
+						 <button  onclick="navExpander.expand(this)" id="grid">Grids</button>
+						<ul>
+							<li class="clearfix" id= "fullGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/full-grid.png" alt="" id= "fullGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Full Grid</li>
+							<li class="clearfix" id= "twoHalfGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/two-half-grid.png" alt="" id= "twoHalfGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Two Half Grid</li>
+							<li class="clearfix" id= "threeEqualGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/three-equal-grid.png" alt="" id= "threeEqualGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Three Equal Grid</li>
+							<li class="clearfix" id= "col2LeftGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/col-2-left-grid.png" alt="" id= "col2LeftGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Col-2-Left Grid</li>
+							<li class="clearfix" id= "col2RightGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/col-2-right-grid.png" alt="" id= "col2RightGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Col-2-Right Grid</li>
+						</ul>
+					</li>
+					<li>
+						<button  onclick="navExpander.expand(this)" id="basicContents">Basic Contents</button>
+						<ul>
+							<li>
+								<button  onclick="navExpander.expand(this)" id="heading">Heading</button>
+								<ul>
+									<li id="h1" draggable = "true" ondragstart = "dragDrop.drag(event)">Heading 1</li>
+									<li id="h2" draggable = "true" ondragstart = "dragDrop.drag(event)">Heading 2</li>
+									<li id="h3" draggable = "true" ondragstart = "dragDrop.drag(event)">Heading 3</li>
+									<li id="h4" draggable = "true" ondragstart = "dragDrop.drag(event)">Heading 4</li>
+									<li id="h5" draggable = "true" ondragstart = "dragDrop.drag(event)">Heading 5</li>
+									<li id="h6" draggable = "true" ondragstart = "dragDrop.drag(event)">Heading 6</li>
+								</ul>
+							</li>
+							<li id="paragraph" draggable = "true" ondragstart = "dragDrop.drag(event)">Paragraphs</li>
+							<li id="link" draggable = "true" ondragstart = "dragDrop.drag(event)">Links</li>
+							<li id="table" draggable = "true" ondragstart = "dragDrop.drag(event)">Table</li>
+							<li><button  onclick="navExpander.expand(this)" id="form">Form</button>
+								<ul>
+									<li id="form" draggable = "true" ondragstart = "dragDrop.drag(event)">Form Container</li>
+									<li id="label" draggable = "true" ondragstart = "dragDrop.drag(event)">Label</li>
+									<li id="text" draggable = "true" ondragstart = "dragDrop.drag(event)">Text</li>
+									<li id="password" draggable = "true" ondragstart = "dragDrop.drag(event)">Password</li>
+									<li id="button" draggable = "true" ondragstart = "dragDrop.drag(event)">Button</li>
+									<li id="submit" draggable = "true" ondragstart = "dragDrop.drag(event)">Submit Button</li>
+									<li id="radio" draggable = "true" ondragstart = "dragDrop.drag(event)">Radio</li>
+									<li id="checkbox" draggable = "true" ondragstart = "dragDrop.drag(event)">CheckBox</li>
+								</ul>
+							</li>
+							<li id="image" draggable="true" ondragstart="dragDrop.drag(event)">Image</li>
+
+							
+						</ul>
+					<!-- 	</li>
+						<li>Table</li>
+						<li>
+							Form
+							<ul>
+								<li>label</li>
+								<li>text</li>
+								<li>text-box</li>
+								<li>button</li>
+								<li>radio</li>
+								<li>checkbox</li>
+							</ul>
+						</li>
+						<li>Images</li>
+						<li> -->
+						
+					</li>
+					
+	
+				</ul>
+			</div>
+			
+			
+
+		</div>
+		<script>
+			// let download = document.getElementById('download');
+			// download.onclick = () => {
+			// 	const fileStream = streamSaver.createWriteStream('filename.txt')
+			// 	const writer = fileStream.getWriter()
+			// 	const encoder = new TextEncoder
+			// 	let data = 'a'.repeat(1024)
+			// 	let uint8array = encoder.encode(data + "\n\n")
+
+			// 	writer.write(uint8array)
+			// 	writer.close()
+			// }
+		</script>
+		<script src="js/container.js"></script>
+		<script src="js/inlineContainer.js"></script>
+		<script src="js/form.js"></script>
+		<script src="js/grid.js"></script>
+		<script src="js/content.js"></script>
+		<script src="js/dragdrop.js"></script>
+		<script src="js/navButtons.js"></script>
+		<script src="js/nav.js"></script>
+
+		<script src="js/sidebar.js"></script>
+	</body>
+</html>

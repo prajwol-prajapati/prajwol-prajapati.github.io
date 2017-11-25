@@ -1,0 +1,1 @@
+let navButtons = new NavButtons();

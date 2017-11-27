@@ -37,7 +37,13 @@
 .button-group{
 
 }
-
+.menu-head{
+	font-size: 22px;
+	color: white;
+	padding-bottom:15px;
+	display: block;	
+	text-align: center;
+}
 .side-bar ul li{
 	list-style: none;
 	/*font-size: 22px;*/
@@ -178,6 +184,67 @@ img{
 	
 	min-height: 2em;
 }
+
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#menu2 {
+    
+    background-color: #333;
+}
+
+
+#menu2 li a {
+    
+    color: white;
+    
+}
+
+#menu2 li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#menu2 .active {
+    background-color: #4CAF50;
+}
+
+ul#menu1{
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+#menu1 li a{
+    color: #666;
+    
+}
+
+#menu1 li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+#menu1 li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+
 /*.side-bar>ul>li>ul>li{
 	display: none;
 	font-size: 20px;

@@ -8,7 +8,7 @@ class NavButtons{
 		this.previewButton.onclick = () => {
 			this.preView();
 		}
-		this.downloadCounter = 0;
+		// this.downloadCounter = 0;
 	}
 
 	editView(){
@@ -57,9 +57,9 @@ class NavButtons{
 			<head>
 				
 				<title>Web Builder</title>
-				<link rel="stylesheet" href="reset.css">
-				<link rel="stylesheet" href="layout.css">
-				<link rel="stylesheet" href="style.css">
+				<link rel="stylesheet" href="https://prajwol-prajapati.github.io/js-experiment/web-builder/css/reset.css">
+				<link rel="stylesheet" href="https://prajwol-prajapati.github.io/js-experiment/web-builder/css/layout.css">
+				<link rel="stylesheet" href="https://prajwol-prajapati.github.io/js-experiment/web-builder/css/style.css">
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -73,196 +73,243 @@ class NavButtons{
 
 		let editPanel = document.getElementById('editPanel');
 		console.log(editPanel.innerHTML);
+		console.log(editPanel);
+		console.log(editPanel.children);
+		console.log(null);
+		console.log([]);
+		this.setInnerElementNonEditable();
+		
+
 		let htmlData = editPanel.innerHTML;
 		let totalData = htmlStart + htmlData + htmlEnd;
-		let resetCSS = `*{
-			margin: 0px;
-			padding: 0px;
-			/*text-align: center;*/
-		}
+		// let resetCSS = `*{
+		// 	margin: 0px;
+		// 	padding: 0px;
+		// 	/*text-align: center;*/
+		// }
 
-		.clearfix:before,
-		.clearfix:after {
-		  content: "";
-		  display: table;
-		} 
-		.clearfix:after {
-		  clear: both;
-		}
-		.clearfix {
-		  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-		}`;
-		let styleCSS = `
-		.pull-right{
-			float: right;
-		}
+		// .clearfix:before,
+		// .clearfix:after {
+		//   content: "";
+		//   display: table;
+		// } 
+		// .clearfix:after {
+		//   clear: both;
+		// }
+		// .clearfix {
+		//   zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+		// }`;
+		// let styleCSS = `
+		// .pull-right{
+		// 	float: right;
+		// }
 
-		.pull-left{
-			float: left:;
-		}
+		// .pull-left{
+		// 	float: left:;
+		// }
 
-		.nav-bar>.nav>ul>li{
-			display: inline-block;
-			list-style: none;
-		}
+		// .nav-bar>.nav>ul>li{
+		// 	display: inline-block;
+		// 	list-style: none;
+		// }
 
-		.nav-bar{
+		// .nav-bar{
 
-		}
+		// }
 
-		.button-group{
+		// .button-group{
 
-		}
+		// }
 
-		.side-bar ul li{
-			list-style: none;
-			/*font-size: 22px;*/
-			color: white;
-			cursor: pointer;
-		}
+		// .side-bar ul li{
+		// 	list-style: none;
+		// 	/*font-size: 22px;*/
+		// 	color: white;
+		// 	cursor: pointer;
+		// }
 
-		table {
-		    border-collapse: collapse;
-		    width: 100%;
-		}
+		// table {
+		//     border-collapse: collapse;
+		//     width: 100%;
+		// }
 
-		th, td {
-		    text-align: left;
-		    padding: 8px;
-		}
-		img{
-			width: 100%;
-		}
-		tr:nth-child(even){background-color: #f2f2f2}
+		// th, td {
+		//     text-align: left;
+		//     padding: 8px;
+		// }
+		// img{
+		// 	width: 100%;
+		// }
+		// tr:nth-child(even){background-color: #f2f2f2}
 
-		th {
-		    background-color: #4CAF50;
-		    color: white;
-		}
+		// th {
+		//     background-color: #4CAF50;
+		//     color: white;
+		// }
 
 
-		#formElement{
-			width: 100%;
-			min-width:2em;
+		// #formElement{
+		// 	width: 100%;
+		// 	min-width:2em;
 			
-			min-height: 2em;
-		}
-		/*.side-bar>ul>li>ul>li{
-			display: none;
-			font-size: 20px;
-			color: yellow;
-		}
+		// 	min-height: 2em;
+		// }
+		// /*.side-bar>ul>li>ul>li{
+		// 	display: none;
+		// 	font-size: 20px;
+		// 	color: yellow;
+		// }
 
-		.side-bar ul li:hover ul>li{
-			display: block;
-		}
+		// .side-bar ul li:hover ul>li{
+		// 	display: block;
+		// }
 
-		.side-bar>ul>li>ul>li>ul>li{
-			display: none;
-			font-size: 16px;
-			color: red;
-		}
+		// .side-bar>ul>li>ul>li>ul>li{
+		// 	display: none;
+		// 	font-size: 16px;
+		// 	color: red;
+		// }
 
-		.side-bar>ul>li>ul>li:hover ul>li{
-			display: block;
-		}*/`;
+		// .side-bar>ul>li>ul>li:hover ul>li{
+		// 	display: block;
+		// }*/`;
 
-		let layoutCSS = `.col-1 {width: 7.33%;}
-		.col-2 {width: 15.66%;}
-		.col-3 {width: 24%;}
-		.col-4 {width: 32.33%;}
-		.col-5 {width: 40.66%;}
-		.col-6 {width: 49%;}
-		.col-7 {width: 57.33%;}
-		.col-8 {width: 65.66%;}
-		.col-9 {width: 74%;}
-		.col-10 {width: 82.33%;}
-		.col-11 {width: 90.66%;}
-		.col-12 {width: 100%;}
+		// let layoutCSS = `.col-1 {width: 7.33%;}
+		// .col-2 {width: 15.66%;}
+		// .col-3 {width: 24%;}
+		// .col-4 {width: 32.33%;}
+		// .col-5 {width: 40.66%;}
+		// .col-6 {width: 49%;}
+		// .col-7 {width: 57.33%;}
+		// .col-8 {width: 65.66%;}
+		// .col-9 {width: 74%;}
+		// .col-10 {width: 82.33%;}
+		// .col-11 {width: 90.66%;}
+		// .col-12 {width: 100%;}
 
 
-		body {
-		  	margin: 0 auto;
-		  	max-width: 100%;
-			/*height: 100vh;*/
+		// body {
+		//   	margin: 0 auto;
+		//   	max-width: 100%;
+		// 	/*height: 100vh;*/
 
-		}
+		// }
 
-		.main-container{
+		// .main-container{
 			
 			
-			min-height: 100vh;/*remove*/
-			position: relative;
-			padding-left: 1em;
-			padding-right: 1em;
-			/*background: green;	*/
+		// 	min-height: 100vh;/*remove*/
+		// 	position: relative;
+		// 	padding-left: 1em;
+		// 	padding-right: 1em;
+		// 	/*background: green;	*/
 
-		}
+		// }
 
-		.main-container .edit{
-			margin-left: 0em;/*200px*/	
-			min-height:95vh;
-			/*background: red;*/	
-			/*display: none;*/
-		}
+		// .main-container .edit{
+		// 	margin-left: 0em;/*200px*/	
+		// 	min-height:95vh;
+		// 	/*background: red;*/	
+		// 	/*display: none;*/
+		// }
 
 
-		.nav-bar{
-			display: none;
-			height: 2em;
-			position: fixed;
-			z-index: 15;
-			top: 0px;
-			left: 0px;
-			right:0px;
-			background: yellow;
-			padding: 5px;
-		}
+		// .nav-bar{
+		// 	display: none;
+		// 	height: 2em;
+		// 	position: fixed;
+		// 	z-index: 15;
+		// 	top: 0px;
+		// 	left: 0px;
+		// 	right:0px;
+		// 	background: yellow;
+		// 	padding: 5px;
+		// }
 
-		.side-bar{
-			display: none;
-			position: fixed;
-		    width: 11.25em;/*180px*/
-		    left: 0;
-		    bottom: 0;
-		    top: 3em;
-		    background: #ccc;
-		    padding-left: 10px;
-		    z-index: 10;
-		}
+		// .side-bar{
+		// 	display: none;
+		// 	position: fixed;
+		//     width: 11.25em;/*180px*/
+		//     left: 0;
+		//     bottom: 0;
+		//     top: 3em;
+		//     background: #ccc;
+		//     padding-left: 10px;
+		//     z-index: 10;
+		// }
 
-		.grid{
-			/*border: 1px solid yellow;*/
-			border: 5px solid transparent;
-			background: lightgrey;
-			/*display: inline-block;*/
-			min-height: 100px;
-			/*border-radius: 5px;*/
-			padding: 5px;
-			margin: 0.5%;
-			box-sizing: border-box;
-		}
+		// .grid{
+		// 	/*border: 1px solid yellow;*/
+		// 	border: 5px solid transparent;
+		// 	background: lightgrey;
+		// 	/*display: inline-block;*/
+		// 	min-height: 100px;
+		// 	/*border-radius: 5px;*/
+		// 	padding: 5px;
+		// 	margin: 0.5%;
+		// 	box-sizing: border-box;
+		// }
 
-		.close-edit{
-			display: none;
-			position: absolute;
-			top: 0;
-			right: 0;
-			background-color: red;
+		// .close-edit{
+		// 	display: none;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// 	background-color: red;
 
-		}`;
+		// }`;
 
 		// this.readTextFile("file:///css/style.css");
-		if (this.downloadCounter == 0) {
-			this.download1(resetCSS, 'reset.css', 'css');
-			this.download1(layoutCSS, 'layout.css', 'css');
-			this.download1(styleCSS, 'style.css', 'css');
+		// if (this.downloadCounter == 0) {
+		// 	this.download1(resetCSS, 'reset.css', 'css');
+		// 	this.download1(layoutCSS, 'layout.css', 'css');
+		// 	this.download1(styleCSS, 'style.css', 'css');
 
-		}
-		this.downloadCounter++;
+		// }
+		// this.downloadCounter++;
 		
 		this.download1(totalData, 'index.html', 'html');
+		this.setInnerElementEditable();
 
+	}
+
+	uploadButton(){
+		this.frame = document.createElement('iframe');
+		this.frame.setAttribute('id', 'uploadedHtml');
+		this.form = new Form();
+		this.input = document.createElement('input');
+		this.input.setAttribute('onchange', 'navButtons.setURL(this)');
+		this.input.setAttribute('id', 'uploadInput');
+		this.input.setAttribute('type', 'file');
+		this.makeContainer();
+		this.container.wrapper.appendChild(this.input);
+		this.container.wrapper.appendChild(this.frame);
+		document.getElementById('editPanel').appendChild(this.container.wrapper);
+
+	}
+
+	setURL(input){
+		if (input.files && input.files[0]) {
+            let reader = new FileReader();
+
+            reader.onload = function (e) {
+            	this.frame = document.getElementById('editPanel');
+                this.frame.setAttribute('src', e.target.result);
+                this.browse = document.getElementById('uploadInput').parentElement;
+                this.parent = this.browse.parentElement;
+                console.log(this.frame.contentDocument);
+                console.log(this.frame.contentWindow.document.children[0].children[1]);
+                this.editCode = this.frame.contentWindow.document.body.innerHTML;
+                console.log(document.getElementsByClassName('main-container'));
+                console.log(this.editCode);
+                this.editPanel = document.getElementById('editPanel');
+
+                // this.parent.removeChild(this.browse);
+                this.editPanel.appendChild(this.editCode.innerHTML);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
 	}
 
 	download1(data, filename, type) {
@@ -297,5 +344,54 @@ class NavButtons{
 	        }
 	    }
 	    rawFile.send(null);
+	}
+
+	setInnerElementNonEditable(){
+		this.editable = document.getElementsByClassName('editable');
+			console.log((this.editable));
+			console.log((Array(this.editable)));
+		for (let i = 0; i<this.editable.length; i++){
+			this.editable[i].setAttribute('contenteditable', 'false');
+		}
+		// this.editable.forEach((element) => {
+		// 		element.setAttribute('contenteditable', 'false');
+		// });
+		// console.log(element.children);
+		// Array.prototype.forEach.call(element.children, (child) => {
+		// 	console.log(child.children);
+		// 	console.log([child.children]);
+		// 	console.log(undefined);
+		// 	console.log(child.children != []);
+		// 	while(child.children != [] && child.children != undefined){
+		// 	console.log(child.children != [] && child != undefined);
+
+		// 	console.log(child.children);
+		// 	console.log([child.children].length > 1);
+		// 		if ([child.children].length > 1 && child != undefined && child.children != undefined) {
+		// 			this.setInnerElementNonEditable(child);
+		// 		}else{
+
+		// 			child = child.children;
+		// 			console.log(child);
+		// 		}
+		// 		console.log(child);
+		// 	}
+		// 	console.log(child[1].children);
+		// 	child[1].setAttribute('contenteditable', 'false');
+		// });
+	}
+
+	setInnerElementEditable(){
+		this.editable = document.getElementsByClassName('editable');
+			console.log((this.editable));
+			console.log((Array(this.editable)));
+		for (let i = 0; i<this.editable.length; i++){
+			this.editable[i].setAttribute('contenteditable', 'true');
+		}
+	}
+
+	makeContainer(){
+		this.container = new Container();
+
 	}
 }

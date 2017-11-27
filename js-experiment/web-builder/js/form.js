@@ -15,6 +15,8 @@ class Form{
 		this.label = document.createElement('label');
 		this.label.innerHTML = 'edit label: ';
 		this.label.setAttribute('contenteditable', 'true');
+		this.label.setAttribute('class', 'editable');
+
 		this.inlineContainer.wrapper.appendChild(this.label);
 		// this.form.appendChild(this.inlineContainer.wrapper);
 		return this.inlineContainer.wrapper;
@@ -39,6 +41,8 @@ class Form{
 		if (type == 'radio' || type == 'checkbox') {
 			this.inlineContainer.wrapper.appendChild(this.label);
 			this.label.setAttribute('contenteditable', 'true');
+			this.label.setAttribute('class', 'editable');
+
 			this.inlineContainer.wrapper.appendChild(this.br);
 
 
@@ -53,12 +57,14 @@ class Form{
 		if (type == 'button') {
 			this.input.setAttribute('value', 'Button');
 			this.input.setAttribute('contenteditable', 'true');
+			this.input.setAttribute('class', 'editable');
+
 			this.inlineContainer.wrapper.appendChild(this.br);
 			
 		}
 
 		if (type == 'file') {
-			this.input.setAttribute('onchange', 'content.setURL(this)')
+			this.input.setAttribute('onchange', 'content.setURL(this)');
 		}
 		// this.form.appendChild(this.inlineContainer.wrapper);
 		return this.inlineContainer.wrapper;

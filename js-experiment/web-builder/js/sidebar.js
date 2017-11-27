@@ -21,6 +21,10 @@ let grid = new Grid();
 
 let content = new Content();
 
+let menuMaker = new MenuMaker();
+
+
 let dragDrop = new DragDrop();
 
 let navExpander = new NavExpander();
+

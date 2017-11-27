@@ -9,15 +9,16 @@ class DragDrop{
 
 	drag(ev) {
 		this.dragElement = this.dragSelector(ev.target.id);
+		console.log(this.dragElement);
 		this.dragId = ev.target.id;
 	    ev.dataTransfer.setData(this.dragElement, ev.target.id);
-	    console.log(ev.target.id);
+	    // console.log(ev.target.id);
 	}
 
 	drop(ev) {
     ev.preventDefault();
     this.dropSelector(this.dragId);
-    console.log(this.dragId);
+    // console.log(this.dragId);
     ev.target.appendChild(this.dragElement);
     
 
@@ -41,7 +42,12 @@ class DragDrop{
 			case "col2RightGrid":
 			return grid.col2RightGrid();
 
+			//menu bar
+			case "menu1":
+			return menuMaker.makeMenu('menu1');
 
+			case "menu2":
+			return menuMaker.makeMenu('menu2');
 			//basic content
 			//heading
 			case "h1":
@@ -92,6 +98,8 @@ class DragDrop{
 
 			case 'image':
 			return content.makeImage();
+
+
 
 		}
 	}

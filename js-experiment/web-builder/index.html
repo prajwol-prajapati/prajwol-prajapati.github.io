@@ -25,22 +25,23 @@
 			<!-- top navigation bar -->
 			<div class="nav-bar">
 			
-				<div class="col-5 logo pull-left">
+				<div class="col-4 logo pull-left">
 					<h1>Web Builder</h1>
 				</div>
 				
-				<div class="col-7 nav pull-right">
+				<div class="col-8 nav pull-right">
 					<ul class="pull-right">
 						<li>
 							<div class="button-group">
-								<button id="editViewButton" class="active" disabled="true"><i class="fa fa-edit"></i>Edit</button>
-								<button id="previewButton"><i class="fa fa-tv"></i>Preview</button>
+								<button id="editViewButton" class="active" disabled="true"><i class="fa fa-edit"></i> Edit</button>
+								<button id="previewButton"><i class="fa fa-tv"></i> Preview</button>
 							</div>
 						</li>
 						
 						<li>
 							<div class="button-group">
-								<button id="download" onclick="navButtons.downloadButton()"><i class="fa fa-download"></i>Download</button>
+								<button id="download" onclick="navButtons.downloadButton()"><i class="fa fa-download"></i> Download</button>
+								<button id="upload" onclick="navButtons.uploadButton()"><i class="fa fa-upload"></i> Upload Previous</button>
 							</div>
 						</li>
 					</ul>
@@ -52,7 +53,7 @@
 			
 			<!-- side bar -->
 			<div class="side-bar" id="sideBar">
-				<ul>
+				<ul><span class="menu-head">Drag Menu <i class="fa fa-arrows"></i></span>
 					<li>
 						 <button  onclick="navExpander.expand(this)" id="grid">Grids</button>
 						<ul>
@@ -61,6 +62,15 @@
 							<li class="clearfix" id= "threeEqualGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/three-equal-grid.png" alt="" id= "threeEqualGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Three Equal Grid</li>
 							<li class="clearfix" id= "col2LeftGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/col-2-left-grid.png" alt="" id= "col2LeftGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Col-2-Left Grid</li>
 							<li class="clearfix" id= "col2RightGrid" draggable = "true" ondragstart = "dragDrop.drag(event)"><img src="images/col-2-right-grid.png" alt="" id= "col2RightGrid" draggable = "true" ondragstart = "dragDrop.drag(event)">Col-2-Right Grid</li>
+						</ul>
+					</li>
+
+					<li>
+						 <button  onclick="navExpander.expand(this)" id="menuBar">Menu Bar</button>
+						<ul>
+							<li class="clearfix" id= "menu1" draggable = "true" ondragstart = "dragDrop.drag(event)">Menu 1</li>
+							<li class="clearfix" id= "menu2" draggable = "true" ondragstart = "dragDrop.drag(event)">Menu 2</li>
+							
 						</ul>
 					</li>
 					<li>
@@ -139,10 +149,11 @@
 		<script src="js/form.js"></script>
 		<script src="js/grid.js"></script>
 		<script src="js/content.js"></script>
+		<script src="js/menu.js"></script>
+		
 		<script src="js/dragdrop.js"></script>
 		<script src="js/navButtons.js"></script>
 		<script src="js/nav.js"></script>
-
 		<script src="js/sidebar.js"></script>
 	</body>
 </html>

@@ -13,6 +13,7 @@ class Content{
 		this.element.innerHTML = "Edit Heading";
 		this.element.setAttribute('contenteditable', 'true');
 		this.element.setAttribute('draggable', 'true');
+		this.element.setAttribute('class', 'editable');
 		this.container.wrapper.appendChild(this.element);
 		return this.container.wrapper;
 	}
@@ -20,9 +21,13 @@ class Content{
 	makeParagraph(){
 		this.makeContainer();
 		this.element = document.createElement('p');
-		this.element.innerHTML = "Type the paragraph here";
+		this.element.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolorum 
+								praesentium hic nulla velit adipisci ipsum soluta placeat quae, officiis 
+								architecto similique eos possimus qui modi? Voluptatum, aliquid hic. Repellat.`;
 		this.element.setAttribute('contenteditable', 'true');
 		this.element.setAttribute('draggable', 'true');
+		this.element.setAttribute('class', 'editable');
+
 		this.container.wrapper.appendChild(this.element);
 		return this.container.wrapper;
 	}
@@ -32,6 +37,8 @@ class Content{
 		this.link = document.createElement('a');
 		this.link.innerHTML = "Edit Link name";
 		this.link.setAttribute('contenteditable', 'true');
+		this.link.setAttribute('class', 'editable');
+
 		this.inlineContainer.wrapper.appendChild(this.link);
 		return this.inlineContainer.wrapper;
 	}
@@ -122,12 +129,15 @@ class Content{
 				if(i==0){
 					this.th = document.createElement('th');
 					this.th.setAttribute('contenteditable', 'true');
+					this.th.setAttribute('class', 'editable');
+
 					this.th.innerHTML = 'data';
 					this.tr.appendChild(this.th);
 				}else{
 
 					this.td = document.createElement('td');
 					this.td.setAttribute('contenteditable', 'true');
+					this.td.setAttribute('class', 'editable');
 
 					this.td.innerHTML = 'data';
 					this.tr.appendChild(this.td);

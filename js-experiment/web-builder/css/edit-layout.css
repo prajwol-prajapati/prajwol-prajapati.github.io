@@ -51,7 +51,7 @@ body {
 
 .side-bar{
 	position: fixed;
-    width: 11.25em;/*180px*/
+    width: 12em;/*180px*/
     left: 0;
     bottom: 0;
     top: 3.5em;
@@ -60,7 +60,9 @@ body {
     /*padding-left: 10px;*/
     z-index: 10;
     transition: max-width 0.8s ease-out;
+    overflow-y: auto;
 }
+
 
 .wrapper{
 	border: 2px solid transparent;

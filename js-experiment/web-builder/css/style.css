@@ -6,7 +6,11 @@
 .pull-left{
 	float: left:;
 }
-
+.nav-bar h1{
+	color: white;
+	line-height: 1.5em;
+	padding-left: .5em;
+}
 .nav-bar>.nav>ul>li{
 	display: inline-block;
 	list-style: none;
@@ -19,19 +23,19 @@
 
 .nav-bar button{
 	padding: 8px;
-	background: #5ea5dc;
+	background: #4dd0e1;
 	border: none;
 	border-radius: 5px;
 	color: white;
 }
 
 .nav-bar button:hover{
-	background: #4a7ab6;
+	background: #00acc1;
 
 }
 
 .nav-bar button.active{
-	background: #4a7ab6;
+	background: #00acc1;
 }
 
 .button-group{
@@ -67,7 +71,7 @@
 	box-sizing: border-box;
 }
 .side-bar>ul>li button{
-    background: #f5a266;
+    background: #4dd0e1;
 	
 	width: 100%;
 	padding: 5px;
@@ -88,11 +92,11 @@
 }
 
 .side-bar>ul>li button:hover{
-	background: #ee7c3f;
+	background: #0097a7;
 }
 
 .side-bar>ul>li button.active{
-	background: #ee7c3f;
+	background: #0097a7;
 
 }
 
@@ -122,7 +126,7 @@
 }
 
 .side-bar>ul>li>ul>li:hover{
-	background: #ee7c3f;
+	background: #0097a7;
 }
 
 .side-bar>ul>li>ul>li>button{
@@ -145,16 +149,16 @@
 }*/
 
 .side-bar>ul>li>ul>li>button.active:hover{
-	background: #f5a266;
+	background: #4dd0e1;
 }
 
 .side-bar>ul>li>ul>li>ul>li{
-	background: #ee7c3f;
+	background: #0097a7;
 	padding-left: 20px;
 }
 
 .side-bar>ul>li>ul>li>ul>li:hover{
-	background: #f5a266;
+	background: #4dd0e1;
 }
 
 table {

@@ -23,19 +23,19 @@
 
 .nav-bar button{
 	padding: 8px;
-	background: #4dd0e1;
+	background: #00BCD4;
 	border: none;
 	border-radius: 5px;
 	color: white;
 }
 
 .nav-bar button:hover{
-	background: #00acc1;
+	background: #2196F3;
 
 }
 
 .nav-bar button.active{
-	background: #00acc1;
+	background: #2196F3;
 }
 
 .button-group{
@@ -50,7 +50,6 @@
 }
 .side-bar ul li{
 	list-style: none;
-	/*font-size: 22px;*/
 	color: white;
 	cursor: pointer;
 }
@@ -64,14 +63,13 @@
 .side-bar>ul>li{
 	
 	width: 100%;
-	/*padding: 10px 10px;*/
 	font-size: 20px;
 	border: none;
 	text-align: left;
 	box-sizing: border-box;
 }
 .side-bar>ul>li button{
-    background: #4dd0e1;
+    background: #00BCD4;
 	
 	width: 100%;
 	padding: 5px;
@@ -82,7 +80,15 @@
 	color: white;
 	transition: 0.4s;
 }
+.draggable{
+	float: right;
+	color: white;
+	text-indent: center;
+	padding-top: 4px !important;
+	padding-right: 3px ;
+	font-size: 12px !important;
 
+}
 .side-bar>ul>li button:after{
 	content: '\002B';
     font-size: 18px;
@@ -92,11 +98,11 @@
 }
 
 .side-bar>ul>li button:hover{
-	background: #0097a7;
+	background: #1976D2;
 }
 
 .side-bar>ul>li button.active{
-	background: #0097a7;
+	background: #1976D2;
 
 }
 
@@ -106,7 +112,6 @@
 
 .side-bar>ul>li>ul>li{
 	
-	/*width: 100%;*/
 	padding: 5px;
 	padding-left: 10px;
 	font-size: 18px;
@@ -120,13 +125,12 @@
 	height: 50px;
 	padding: 0px 10px;
 	float: left;
-/*	display: inline-block;*/
 
 
 }
 
 .side-bar>ul>li>ul>li:hover{
-	background: #0097a7;
+	background: #1976D2;
 }
 
 .side-bar>ul>li>ul>li>button{
@@ -149,16 +153,16 @@
 }*/
 
 .side-bar>ul>li>ul>li>button.active:hover{
-	background: #4dd0e1;
+	background: #00BCD4;
 }
 
 .side-bar>ul>li>ul>li>ul>li{
-	background: #0097a7;
+	background: #1976D2;
 	padding-left: 20px;
 }
 
 .side-bar>ul>li>ul>li>ul>li:hover{
-	background: #4dd0e1;
+	background: #00BCD4;
 }
 
 table {
@@ -248,25 +252,3 @@ ul#menu1{
     color: white;
     background-color: #4CAF50;
 }
-
-
-
-/*.side-bar>ul>li>ul>li{
-	display: none;
-	font-size: 20px;
-	color: yellow;
-}
-
-.side-bar ul li:hover ul>li{
-	display: block;
-}
-
-.side-bar>ul>li>ul>li>ul>li{
-	display: none;
-	font-size: 16px;
-	color: red;
-}
-
-.side-bar>ul>li>ul>li:hover ul>li{
-	display: block;
-}*/

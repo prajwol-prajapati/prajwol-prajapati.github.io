@@ -12,8 +12,8 @@
 .col-12 {width: 99%;}
 
 body {
-	  	margin: 0 auto;
-	  	max-width: 100%;
+	margin: 0 auto;
+	max-width: 100%;
 		/*height: 100vh;*/
 
 }
@@ -46,7 +46,7 @@ body {
 	top: 0px;
 	left: 0px;
 	right:0px;
-	background: #00838f;
+	background: #1976D2;
 	box-shadow: 0px 0px 15px #888888;
 	padding: 5px;
 }
@@ -87,7 +87,7 @@ body {
 }
 
 
-@media only screen and (min-width:610px){
+@media only screen and (min-width:520px){
 	.col-1 {width: 7.33%;}
 	.col-2 {width: 15.66%;}
 	.col-3 {width: 24%;}
@@ -137,7 +137,7 @@ body {
 		top: 0px;
 		left: 0px;
 		right:0px;
-		background: #00838f;
+		background: #1976D2;
 		box-shadow: 0px 0px 15px #888888;
 		padding: 5px;
 	}
@@ -155,16 +155,11 @@ body {
 	}
 
 	.grid{
-		/*border: 1px solid yellow;*/
 		border: 5px solid transparent;
-		background: lightgrey;
-		/*display: inline-block;*/
+		background: #fbfaf9;
 		min-height: 100px;
-		/*border-radius: 5px;*/
 		padding: 5px;
 		margin: 0.5%;
-
-		
 		box-sizing: border-box;
 	}
 
